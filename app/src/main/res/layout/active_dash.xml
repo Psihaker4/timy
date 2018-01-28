@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avantgarde.timy.view.main.dashboard.ActiveDashLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Name"
+        android:id="@+id/name"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="23h 30m"
+        android:id="@+id/duration"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Category 322213123"
+        android:id="@+id/category"
+        android:drawableEnd="@drawable/category_circle"
+        android:drawablePadding="3dp"
+        android:layout_alignBottom="@id/duration"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/colorAccent"
+        android:id="@+id/progress_0"
+        android:layout_below="@id/duration"
+        android:layout_width="100dp"
+        android:layout_height="2dp"/>
+    <View
+        android:background="#bdbdbd"
+        android:id="@+id/progress_1"
+        android:layout_toEndOf="@id/progress_0"
+        android:layout_below="@id/duration"
+        android:layout_width="50dp"
+        android:layout_height="2dp"/>
+
+    <View
+        android:layout_marginTop="12dp"
+        android:background="#18000000"
+        android:layout_below="@id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</com.avantgarde.timy.view.main.dashboard.ActiveDashLayout>
